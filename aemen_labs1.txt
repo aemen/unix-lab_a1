@@ -1,0 +1,46 @@
+1)To create a directory we use the command :mkdir <name>
+2)command "cd<directory_name>" gets you into the directory .
+3)vim <file name>:creates a text file.
+4)i for insert mode.
+5)esc for command mode.
+6)x for  deleting the unwanted character.
+7)u to undo the last the command .u to undo the wholeline.
+8)ctrl-r to redo
+9)A to append text at the end.
+10):wq to save and exit.
+11):q! to trash all the changes.
+12)dw to move the cursor to the begining of the word todelete that word.
+13)2w to move the cursor two words forward .
+14)3e to move the cursor to the end of the third word forward.
+15)0 to move the start of the line.
+16)d2w which deletes 2 words ...number can be changed for deleting the number of consecutive words like d3w
+17)dd to delete the line and 2add to delete to line .number can be changed for deleting the number of consecutive words.
+18)p to put the previously deleted text after the cursor 
+19) r to replace the letter 
+20) ce to change until the end of a word 
+21) ce deletes the word and puts in insert mode
+22)G to move you to the bottom of the file.
+23)gg to move to the start of the file.
+24)% to find a matching.
+25):s/ to replace the old word with the new word.
+26)/ for backward search 
+27)N to search in oppposite direction.
+28)? for forward search.
+29):| to run the shell commands.
+30)v strts visual mode  for selecting the lines .
+31):r filename will insert the content into the insert mode.
+32)R to replace the more than one word.
+33)y to copy the text 
+34) p to paste it.
+35)yw to copy a word.
+36)o to open a line below the cursor .
+37)O to open a line above the cursor.
+38)a to insert the text after the cursor.
+39)A to insert the text after the end of a word.
+40) e to move  to the end of a word.
+41)y to copy the text.p to paste it.
+42)R to replace mode 
+43)crtl-w to jump from one window to another.
+44)ls to display the contents.
+
+
