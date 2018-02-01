@@ -1,0 +1,383 @@
+1)who command
+-man who
+->-a gives information about the users who are currently logged in.
+->-b gives time of last system boot.
+->-d gives dead processes.
+->-h gives the line of coloumn heading.
+--ips  print  ips  instead  of hostnames. with --lookup, canonicalizes
+              based on stored IP, if available, rather than stored hostname
+
+       -l, --login
+              print system login processes
+
+       --lookup
+              attempt to canonicalize hostnames via DNS
+
+       -m     only hostname and user associated with stdin
+
+       -p, --process
+              print active processes spawned by init
+
+       -q, --count
+              all login names and number of users logged on
+
+       -r, --runlevel
+              print current runlevel
+       -l, --login
+              print system login processes
+
+       --lookup
+              attempt to canonicalize hostnames via DNS
+
+       -m     only hostname and user associated with stdin
+
+       -p, --process
+              print active processes spawned by init
+
+       -q, --count
+              all login names and number of users logged on
+
+       -r, --runlevel
+              print current runlevel
+
+       -s, --short
+              print only name, line, and time (default)
+ -t, --time
+              print last system clock change
+
+       -T, -w, --mesg
+              add user's message status as +, - or ?
+
+       -u, --users
+              list users logged in
+
+       --message
+              same as -T
+
+       --writable
+              same as -T
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
+
+
+
+
+
+2)ls command lists directory contents.
+       List  information  about  the files.
+
+       -a, --all
+              do not ignore entries starting with .
+
+       -A, --almost-all
+              along with. gives you the hidden files.
+
+       --author
+              with -l, print the author of each file
+
+       -b, --escape
+              print C-style escapes for nongraphic characters
+
+       --block-size=SIZE
+              scale sizes by SIZE before printing them.
+
+       -B, --ignore-backups
+              do not list implied entries ending with ~
+
+       -c     with -lt: sort by, and show, ctime (time of last modification of
+              file status information); with -l: show ctime and sort by  name;
+              otherwise: sort by ctime, newest first
+
+       -C     list entries by columns
+
+       --color gives you the output 
+
+       -d, --directory
+              list directories , not their contents.
+
+       -D, --dired
+              generates the outputs. 
+
+       -f     doesnot help in sorting.
+
+        -F, --classify
+             append indicator to entries.
+
+       --file-type
+           donot append.
+3)cal command
+->-h gives the highlights of today.
+->-j displays julian calender.
+->-e displays date of easter.
+->-j displays julian days.
+->-m displays the specified month.
+->-o displays the date of easter.
+->-p prints the country codes and switching days from julian to georgian calender.
+->-s gives you the country code.
+->-w prints the number of the week below each coloumn.
+->-y displays a calender for the specified year.
+
+4) bc command
+
+
+-h, --help
+              Print the usage and exit.
+
+       -i, --interactive
+              Force interactive mode.
+
+       -l, --mathlib
+              Define the standard math library.
+
+       -w, --warn
+              Give warnings for extensions to POSIX bc.  
+
+         
+        -s, --standard
+              Process exactly the POSIX bc language.
+
+       -q, --quiet
+              Do not print the normal GNU bc welcome.
+
+       -v, --version
+              Print the version number and copyright and quit.
+
+ 5) date command
+
+
+         -d, --date=STRING
+              display time described by STRING, not 'now'
+
+       --debug
+              annotate the parsed date, and warn about questionable usage  to
+              stderr
+
+       -f, --file=DATEFILE
+              like --date; once for each line of DATEFILE
+
+       -I[FMT], --iso-8601[=FMT]
+              output  date/time in ISO 8601 format.  FMT='date' for date only
+              (the default), 'hours', 'minutes', 'seconds', or 'ns' for  date
+              and    time    to    the    indicated    precision.    Example:
+              2006-08-14T02:34:56-06:00
+
+       -R, --rfc-2822
+              output date and time in RFC 2822 format.
+
+
+-r, --reference=FILE
+              display the last modification time of FILE
+
+       -s, --set=STRING
+              set time described by STRING
+
+       -u, --utc, --universal
+              print or set Coordinated Universal Time (UTC)
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       FORMAT controls the output.  Interpreted sequences are:
+
+       %%     a literal %
+
+       %a     locale's abbreviated weekday name (e.g., Sun)
+
+       %A     locale's full weekday name (e.g., Sunday)
+
+          %b     locale's abbreviated month name (e.g., Jan)
+
+       %B     locale's full month name (e.g., January)
+
+       %c     locale's date and time (e.g., Thu Mar  3 23:05:25 2005)
+
+       %C     century; like %Y, except omit last two digits (e.g., 20)
+
+       %d     day of month (e.g., 01)
+
+       %D     date; same as %m/%d/%y
+
+       %e     day of month, space padded; same as %_d
+
+       %F     full date; same as %Y-%m-%d
+
+       %g     last two digits of year of ISO week number (see %G)
+
+       %G     year of ISO week number (see %V); normally useful only with %V
+
+       %h     same as %b
+
+        %H     hour (00..23)
+
+       %I     hour (01..12)
+
+       %j     day of year (001..366)
+
+       %k     hour, space padded ( 0..23); same as %_H
+
+       %l     hour, space padded ( 1..12); same as %_I
+
+       %m     month (01..12)
+
+       %M     minute (00..59)
+
+       %n     a newline
+
+       %N     nanoseconds (000000000..999999999)
+
+       %p     locale's equivalent of either AM or PM; blank if not known
+
+       %P     like %p, but lower case
+
+
+       %q     quarter of year (1..4)
+
+       %r     locale's 12-hour clock time (e.g., 11:11:04 PM)
+
+       %R     24-hour hour and minute; same as %H:%M
+
+       %s     seconds since 1970-01-01 00:00:00 UTC
+
+       %S     second (00..60)
+
+       %t     a tab
+
+       %T     time; same as %H:%M:%S
+
+       %u     day of week (1..7); 1 is Monday
+
+       %U     week number of year, with Sunday as first day of week (00..53)
+
+       %V     ISO week number, with Monday as first day of week (01..5)
+
+
+       %w     day of week (0..6); 0 is Sunday
+
+       %W     week number of year, with Monday as first day of week (00..53)
+
+       %x     locale's date representation (e.g., 12/31/99)
+
+       %X     locale's time representation (e.g., 23:13:48)
+
+       %y     last two digits of year (00..99)
+
+       %Y     year
+
+       %z     +hhmm numeric time zone (e.g., -0400)
+
+       %:z    +hh:mm numeric time zone (e.g., -04:00)
+
+       %::z   +hh:mm:ss numeric time zone (e.g., -04:00:00)
+
+       %:::z  numeric  time  zone  with  : to necessary precision (e.g., -04,
+              +05:30)
+
+       %Z     alphabetic time zone abbreviation
+
+   6) time command.
+
+ -o FILE, --output=FILE
+              Write the resource use statistics to FILE instead of to the
+              standard error stream.  By default, this overwrites the file,
+              destroying the file's previous contents.  This option is useful
+              for collecting information on interactive programs and programs
+              that produce output on the standard error stream.
+
+       -a, --append
+              Append the resource use information to the output file instead
+              of overwriting it.  This option is only useful with the `-o' or
+              `--output' option.
+
+       -f FORMAT, --format FORMAT
+              Use FORMAT as the format string that controls the output of
+              time.  See the below more information.
+
+       --help Print a summary of the command line options and exit.
+
+       -p, --portability
+              Use the following format string, for conformance with POSIX
+              standard 1003.2:
+       -v, --verbose
+              Use the built-in verbose format, which displays each available
+              piece of information on the program's resource use on its own
+              line, with an English description of its meaning.
+
+       --quiet
+              Do not report the status of the program even if it is different
+              from zero.
+
+       -V, --version
+              Print the version number of time and exit.
+
+7)uname command
+
+
+   -a, --all
+              print  all  information, in the following order, except omit -p
+              and -i if unknown:
+
+       -s, --kernel-name
+              print the kernel name
+
+       -n, --nodename
+              print the network node hostname
+
+        -r, --kernel-release
+              print the kernel release
+
+       -v, --kernel-version
+              print the kernel version
+
+       -m, --machine
+              print the machine hardware name
+
+       -p, --processor
+              print the processor type (non-portable)
+
+       -i, --hardware-platform
+              print the hardware platform (non-portable)
+
+       -o, --operating-system
+              print the operating system
+
+       --help display this help and exit
+
+   --version
+              output version information and exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
