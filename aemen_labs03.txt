@@ -1,0 +1,16 @@
+Head Command
+$ head -n 6 cseunix.csv
+
+TAIL COMMAND
+$ tail -n 3 cseunix.csv
+
+WC COMMAND
+$ wc cseunix.csv
+
+CUT COMMAND
+
+$ cut -d , -f 2 cseunix.csv
+
+PASTE COMMAND
+
+$ paste csea.csv cseb.csv
