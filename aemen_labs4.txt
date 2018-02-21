@@ -1,0 +1,35 @@
+1.Write a shell script to display current time and date using date command 
+
+echo "Today date is `date +%D` "
+echo "Today time is `date +%X` "
+
+2.Write a shell script to check whether a given number is positive or negative
+
+echo "Enter a number "
+read n
+if [ $n -gt 0 ]
+then
+        echo "Number is positive"
+else
+        echo "Number is negative"
+fi
+
+3.Write a shell script to display student grade
+
+echo "Enter the marks "
+read m
+if [ $m -ge 90 ]
+then
+        echo "A grade"
+elif [ $m -ge 80 ]
+then
+        echo "B grade"
+elif [ $m -ge 70 ]
+then
+        echo "C grade"
+elif [ $m -ge 60 ]
+then
+        echo "D grade"
+else
+        echo "Fail"
+fi
