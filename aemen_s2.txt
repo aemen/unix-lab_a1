@@ -1,0 +1,64 @@
+1)who command
+-man who
+->-a gives information about the users who are currently logged in.
+->-b gives time of last system boot.
+->-d gives dead processes.
+->-h gives the line of coloumn heading.
+--ips  print  ips  instead  of hostnames. with --lookup, canonicalizes
+              based on stored IP, if available, rather than stored hostname
+
+       -l, --login
+              print system login processes
+
+       --lookup
+              attempt to canonicalize hostnames via DNS
+
+       -m     only hostname and user associated with stdin
+
+       -p, --process
+              print active processes spawned by init
+
+       -q, --count
+              all login names and number of users logged on
+
+       -r, --runlevel
+              print current runlevel
+       -l, --login
+              print system login processes
+
+       --lookup
+              attempt to canonicalize hostnames via DNS
+
+       -m     only hostname and user associated with stdin
+
+       -p, --process
+              print active processes spawned by init
+
+       -q, --count
+              all login names and number of users logged on
+
+       -r, --runlevel
+              print current runlevel
+
+       -s, --short
+              print only name, line, and time (default)
+ -t, --time
+              print last system clock change
+
+       -T, -w, --mesg
+              add user's message status as +, - or ?
+
+       -u, --users
+              list users logged in
+
+       --message
+              same as -T
+
+       --writable
+              same as -T
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
