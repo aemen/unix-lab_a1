@@ -1,0 +1,91 @@
+arithematic program
+
+echo "enter a number"
+read a
+echo "enter the b value"
+read b
+echo 1.addition
+echo 2.subtraction
+echo 3.multiplication
+echo 4.division
+echo 5.modules
+echo 6.increment
+echo enter your choice
+read choice
+case $choice in
+	1)echo addition : $(expr $a + $b);;
+	2)echo subtraction : $(expr $a - $b);;
+	3)echo multiplication  : $(expr $a \* $b);;
+	4)echo division  :$(expr $a / $b);;
+	5)echo modules  :$(exp $a % $b);;
+	6)echo increment :$(($a + 1));;
+	*)echo   : invalid
+esac 
+
+string matching
+
+a="abc"
+b="efg"
+
+if [ $a = $b ]
+then
+   echo "$a = $b : a is equal to b"
+else
+   echo "$a = $b: a is not equal to b"
+fi
+
+if [ $a != $b ]
+then
+   echo "$a != $b : a is not equal to b"
+else
+   echo "$a != $b: a is equal to b"
+fi
+
+if [ -z $a ]
+then
+   echo "-z $a : string length is zero"
+else
+   echo "-z $a : string length is not zero"
+fi
+
+if [ -n $a ]
+then
+   echo "-n $a : string length is not zero"
+else
+   echo "-n $a : string length is zero"
+fi
+
+if [ $a ]
+then
+   echo "$a : string is not empty"
+else
+   echo "$a : string is empty"
+fi
+
+file operation
+
+file="aemen/aemenlabs.txt
+if [ -s $file ]
+then
+   echo "File size is zero"
+ else
+   echo "File size is not zero"
+  fi
+if [ -r $file ]
+then
+   echo "File has read access"
+  else
+   echo "File does not have read access"
+  fi
+if [ -w $file ]
+then
+   echo "File has write permission"
+  else
+   echo "File does not have write permission"
+  fi
+if [ -x $file ]
+then
+   echo "File has execute permission"
+  else
+   echo "File does not have execute permission"
+fi
