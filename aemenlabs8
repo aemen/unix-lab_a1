@@ -1,0 +1,39 @@
+Shell script to  prefix date infront of the file name and display:
+
+cdate=$(date +%Y-%m-%d)
+for file in file1 file2; do
+    mv "$file" "$cdate"_"$file"
+done
+
+
+Setting permission to the file/directory:
+
+You can change/set file permissions with the chmod command. In Unix, file permissions, which establish who may have different types of access to a file, are specified by both access classes and access types. Access classes are groups of users, and each may be assigned specific access types. The access classes are "user", "group", "other", and "all".
+
+
+For example, to add permission for everyone to read a file in the current directory named myfile, at the Unix prompt, enter:
+
+chmod a+r myfile
+
+The a stands for "all", the + for "add", and the r for "read".
+
+GREP COMMAND:
+
+1.create a file using cat command 
+2.enter some bits into the file and then perform the grep options available:
+ a)-i -to ignore the case for matching.
+ b)-v -doesn't display the line without matching.
+ c)-n -displays the lines with numbering on which the match is found.
+ d)-c -display only the number of lines in which the match is found.
+ e)-E -to choose between two matching characters.
+ 
+OTHER SPECIAL TERMS:
+ 
+a.character* -display 0 or more matches.
+b.character+ -display one or more matches.
+c.character? -display 0 or 1 match.
+d. .* -none or anything.
+e. ^character -display the bits starting with the mentioned letter.
+f. character$ -display the bits ending with the mentioned letter.
+
+
