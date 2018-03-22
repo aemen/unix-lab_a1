@@ -1,0 +1,117 @@
+Awk command
+
+Syntax:
+
+awk options 'selection _criteria {action }' input-file > output-file
+
+Example:
+
+$cat > employee.txt 
+
+employee id|name|department|designation|salary
+10001|akash|accounts|manager|450000|
+10002|shreeram|accounts|assistant manager|30000|
+10003|arun|adminstration|assiastant manager|35000|
+10004|priya|adminstration|manager|50000|
+10005|aaliya|project head|manager|55000|
+10006|barun|project head|assistant manager|45000|
+10007|sobti|team lead|manager|40000|
+10008|lakshmi|team member|20000|
+10009|gargi|team member|25000|
+100010|tarun|team member|25000|
+
+
+
+1. Default behavior of Awk : By default Awk prints every line of data from the specified file.
+
+$ awk '{print}' employee.txt
+Output:
+10001|akash|accounts|manager|450000|
+10002|shreeram|accounts|assistant manager|30000|
+10003|arun|adminstration|assiastant manager|35000|
+10004|priya|adminstration|manager|50000|
+10005|aaliya|project head|manager|55000|
+10006|barun|project head|assistant manager|45000|
+10007|sobti|team lead|manager|40000|
+10008|lakshmi|team member|20000|
+10009|gargi|team member|25000|
+100010|tarun|team member|25000|
+
+
+
+2. Print the lines which matches with the given pattern.
+
+$ awk '/manager/ {print}' employee.txt 
+Output:
+10001|akash|accounts|manager|
+10004|priya|adminstration|manager|50000|
+10005|aaliya|project head|manager|55000|
+10007|sobti|team lead|manager|40000|
+
+3. Spliting a Line Into Fields : For each record i.e line, 
+the awk command splits the record delimited by whitespace character by default and stores it in the $n variables. If the line has 4 words, 
+it will be stored in $1, $2, $3 and $4 respectively. Also, $0 represents the whole line.
+
+$ awk '{print $1,$4}' employee.txt 
+Output:
+akash    450000
+shreeram 30000
+arun     35000
+priya    50000
+
+
+Use of NR built-in variables (Display Line Number)
+
+$ awk '{print NR,$0}' employee.txt 
+Output:
+employee id|name|department|designation|salary
+1.10001|akash|accounts|manager|450000|
+2.10002|shreeram|accounts|assistant manager|30000|
+3.10003|arun|adminstration|assiastant manager|35000|
+4.10004|priya|adminstration|manager|50000|
+5.10005|aaliya|project head|manager|55000|
+6.10006|barun|project head|assistant manager|45000|
+7.10007|sobti|team lead|manager|40000|
+8.10008|lakshmi|team member|20000|
+9.10009|gargi|team member|25000|
+10.100010|tarun|team member|25000|
+In the above example, the awk command with NR prints all the lines along with the line number.
+
+Use of NF built-in variables (Display Last Field)
+
+$ awk '{print $1,$NF}' employee.txt 
+Output:
+akash    450000
+shreeram 30000
+arun     35000
+priya    50000
+aaliya   55000
+barun    45000
+sobti    40000
+lakshmi  20000
+gargi    25000
+tarun    25000
+
+Use of NR built-in variables (Display Line From 3 to 6)
+
+$ awk 'NR==3, NR==6 {print NR,$0}' employee.txt 
+Output:
+
+3.10003|arun|adminstration|assiastant manager|35000|
+4.10004|priya|adminstration|manager|50000|
+5.10005|aaliya|project head|manager|55000|
+6.10006|barun|project head|assistant manager|45000|
+
+Another use of NR built-in variables (Display Line From 1 to 6)
+
+$ awk 'NR==1, NR==6 {print NR,$0}' employee.txt 
+Output:
+1.10001|akash|accounts|manager|450000|
+2.10002|shreeram|accounts|assistant manager|30000|
+3.10003|arun|adminstration|assiastant manager|35000|
+4.10004|priya|adminstration|manager|50000|
+5.10005|aaliya|project head|manager|55000|
+6.10006|barun|project head|assistant manager|45000|
+
+
+
