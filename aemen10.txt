@@ -1,0 +1,10 @@
+
+GREP COMMAND:
+
+1.create a file using cat command 
+2.enter some bits into the file and then perform the grep options available:
+ a)-i -to ignore the case for matching.
+ b)-v -doesn't display the line without matching.
+ c)-n -displays the lines with numbering on which the match is found.
+ d)-c -display only the number of lines in which the match is found.
+e)-E -to choose between two matching characters.
