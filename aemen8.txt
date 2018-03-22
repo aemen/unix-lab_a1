@@ -1,0 +1,34 @@
+sed command
+
+exercise
+
+1.create a file with employee list ?
+
+employee id|name|department|designation|salary
+10001|akash|accounts|manager|450000|
+10002|shreeram|accounts|assistant manager|30000|
+10003|arun|adminstration|assiastant manager|35000|
+10004|priya|adminstration|manager|50000|
+10005|aaliya|project head|manager|55000|
+10006|barun|project head|assistant manager|45000|
+10007|sobti|team lead|manager|40000|
+10008|lakshmi|team member|20000|
+10009|gargi|team member|25000|
+100010|tarun|team member|25000|
+
+
+2.isplay the details of employee who's designation manager/Manager?
+
+sed -i "empl[manager/Manager]/p" empl.
+
+3.alary which starts with 2 display?
+
+sed -d -f 5 "^2" empl.
+
+4.rom line 1 to 5 if any designation is manager replace it with director?
+
+sed -e 'manager/director/g' empl.
+
+
+
+
