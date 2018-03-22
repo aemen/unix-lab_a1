@@ -1,0 +1,6 @@
+exercise
+
+design a search engine to search for word /phrase in any/all documents on your computer
+echo "enter the pattern to be searched "
+read n;
+grep-r1 "$n""/home"
